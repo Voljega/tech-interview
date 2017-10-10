@@ -16,6 +16,7 @@ public class Data {
 
     //Better handling of articles, use TreeMap for best traversal times
     //don't allow external access
+    @JsonIgnore
     private Map<Long,Article> articlesById = new TreeMap<>();
 
     @JsonIgnore //ignored for serialization
