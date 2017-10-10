@@ -14,6 +14,8 @@ Write code that generates `output.json` from `data.json`
 # Solution
 
 Java project using maven
+
 `data.json` is embedded in `./src/main/resources`
+
 DataStore class has a main method wich generate `output.json` at the root of the project
 
