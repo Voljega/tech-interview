@@ -53,6 +53,6 @@ public class DataStoreTest {
 
     @Test
     public void DataStoreShouldWriteOutputCorrectly(){
-        // would not test much than Jasckson's ability to serialize Json correctly
+        // would not test much more than Jackson's ability to serialize Json correctly
     }
 }
