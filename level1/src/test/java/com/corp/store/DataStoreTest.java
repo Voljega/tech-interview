@@ -52,7 +52,13 @@ public class DataStoreTest {
     }
 
     @Test
-    public void DataStoreShouldWriteOutputCorrectly(){
+    public void DataStoreShouldComputeOutputCorrectly(){
         // would not test much more than Jackson's ability to serialize Json correctly
+        DataStore dataStore = new DataStore();
+        dataStore.loadObjects();
+        dataStore.computeCarts();
+        assertEquals(2000,dataStore.getData().getCarts().get(0).getTotal());
+        assertEquals(1400,dataStore.getData().getCarts().get(1).getTotal());
+        assertEquals(0,dataStore.getData().getCarts().get(2).getTotal());
     }
 }
